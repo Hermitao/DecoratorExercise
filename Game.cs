@@ -7,6 +7,7 @@ public class Game
                 LastName = "Raveendran",  
                 Address = "Isline, US"  
         };  
+
         var employeeDecorator = new PermanentEmployeeDecorator(permanentemployeeConcrete);  
         Console.WriteLine(employeeDecorator.Display());  
         var contractemployeeConcrete = new EmployeeConcrete {  
@@ -16,6 +17,6 @@ public class Game
         };  
         var conemployeeDecorator = new ContractEmployeeDecorator(contractemployeeConcrete);  
         Console.WriteLine(conemployeeDecorator.Display());  
-        Console.Read();  
+//         Console.Read();  
     }
 }
