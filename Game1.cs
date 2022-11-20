@@ -46,6 +46,7 @@ public class Game1 : Game
         font = Content.Load<SpriteFont>("Fonts/FiraMono");
 
         character1 = new CharacterConcrete(atlas, 11, 7, position + new Vector2(-100.0f, 0.0f), scale);
+        
         character2 = new CharacterConcrete(atlas, 11, 7, position + new Vector2(25.0f, 0.0f), scale);
         HealthBarDecorator healthBarDecorator = new HealthBarDecorator(character2);
 
