@@ -45,15 +45,19 @@ public class Game1 : Game
         atlas = Content.Load<Texture2D>("adventurer-Sheet");
         font = Content.Load<SpriteFont>("Fonts/FiraMono");
 
-        character1 = new CharacterConcrete(atlas, 11, 7, position + new Vector2(-100.0f, 0.0f), scale);
-        
-        character2 = new CharacterConcrete(atlas, 11, 7, position + new Vector2(25.0f, 0.0f), scale);
+        character1 = new CharacterConcrete(
+            atlas, 
+            11, 7, 
+            position + new Vector2(-100.0f, 0.0f), scale);
+
+        character2 = new CharacterConcrete(
+            atlas, 
+            11, 7, 
+            position + new Vector2(25.0f, 0.0f), scale);
         HealthBarDecorator healthBarDecorator = new HealthBarDecorator(character2);
 
         characters.Add(character1);
         characters.Add(healthBarDecorator);
-
-
     }
 
     protected override void Update(GameTime gameTime)
